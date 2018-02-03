@@ -4,15 +4,15 @@ title: Google Sheets to Github Website - Links
 ---
 
 <!-- Pulls from _data People -->
-{% assign people = site.data.people %}
-{% assign people = people | sort:"Name" %}
+{% assign places = site.data.places %}
+{% assign places = places | sort:"Place" %}
 
-<h3>People</h3>
+<h3>Places</h3>
 <table width="100%">
-{% for Name in people %}
+{% for Place in places %}
   <tr>
-    <td>Hello <strong>{{ people.Name }}</strong></td>
-    <td width="25%">{{ people.LastName }}</td>
+    <td>Hello <strong>{{ Place.Place }}</strong></td>
+    <td width="25%">{{ Place.City }}</td>
   </tr>
 {% endfor %}
 </table>
