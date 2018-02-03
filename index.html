@@ -4,21 +4,15 @@ title: Google Sheets to Github Website - Links
 ---
 
 <!-- Pulls from _data links -->
-{% assign links = site.data.links %}
-{% assign links = links | sort:"Name" %}
+{% assign people = site.data.people %}
+{% assign people = links | sort:"Name" %}
 
-<h3>Links</h3>
+<h3>People</h3>
 <table width="100%">
-{% for link in links %}
+{% for Name in people %}
   <tr>
-    <td><strong>{{ link.name }}</strong></td>
-    <td width="25%">{{ link.url }}</td>
+    <td><strong>{{ people.Name }}</strong></td>
+    <td width="25%">{{ people.LastName }}</td>
   </tr>
 {% endfor %}
 </table>
-<p align="center">
-  <a href="https://github.com/contrafabulists-toolbox/google-sheet-to-github-website">Github Repo</a> -
-  <a href="https://github.com/contrafabulists-toolbox/google-sheet-to-github-website/blob/master/_data/links.yaml">YAML</a> -
-  <a href="https://github.com/contrafabulists-toolbox/google-sheet-to-github-website/blob/master/pull-sheet/index.html">Pull Script</a> -
-  <a href="https://docs.google.com/spreadsheets/d/1yGTd164iMs-7kP_A3XUHJGkKbViN2xohR5HkyRgp1cs/pubhtml">Google Sheet</a>
-</p>
