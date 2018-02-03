@@ -27,7 +27,7 @@ paginate:	1
 paginate_path: "/page:num"
 permalink: /:categories/:year/:month/:day/:title
 
-url: "http://contrafabulists.com" # the base hostname & protocol for your site
+url: "https://newvalleychurch.github.io/google-sheet-to-github-website-master/" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle:
